@@ -13,7 +13,7 @@ var config = require('../config');
 var init = function() {
 
   return session({
-    secret: config.sessionSecret,
+    secret: process.env.SESSION_SECRET,
     resave: false,
     unset: 'destroy',
     saveUninitialized: true,
