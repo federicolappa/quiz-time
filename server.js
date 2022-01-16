@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(session);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
