@@ -6,7 +6,7 @@
 		"port": "27017",
 		"name": "Cluster0"
 	},
-	"secret": "process.env.NODE_ENV" === "production" ? "process.env.SECRET" : "secret",
+	"sessionSecret": "process.env.NODE_ENV" === "production" ? "process.env.SECRET" : "secret",
 	"facebook": {
 		"clientID": "<AppID>",
 		"clientSecret": "<AppSecret>",
