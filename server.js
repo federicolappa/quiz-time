@@ -30,7 +30,7 @@ app.use(session({
   resave:true,
   saveUninitialized:true,
   secret:process.env.SESSION_SECRET,
-  cookie:{maxAge:3600000*24}));
+  cookie:{maxAge:3600000*24}}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
