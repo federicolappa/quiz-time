@@ -27,7 +27,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 const cookieParser = require('cookie-parser')
-const session = require('express-session')
 app.use(cookieParser());
 app.use(session({ secret: 'secret' }));
 app.use(passport.initialize());
