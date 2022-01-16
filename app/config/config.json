@@ -6,7 +6,7 @@
 		"port": "27017",
 		"name": "Cluster0"
 	},
-	"sessionSecret": process.env.SESSION_SECRET,
+	"sessionSecret": "alberotavolo",
 	"facebook": {
 		"clientID": "<AppID>",
 		"clientSecret": "<AppSecret>",
