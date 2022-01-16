@@ -26,7 +26,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.use(session);
+app.use(session({
+  resave:true,
+  saveUninitialized:true,
+  secret:process.env.SESSION_SECRET,
+  cookie:{maxAge:3600000*24}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
