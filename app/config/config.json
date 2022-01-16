@@ -1,10 +1,10 @@
 {
 	"db": {
-		"username": "<MongoDBUsername>",
-		"password": "<MongoDBPassword>",
-		"host": "<MongoDBHost>",
-		"port": "<MongoDBPort>",
-		"name": "<MongoDBName>"
+		"username": "webquizlive",
+		"password": "j6TAjxYbJMPrA8S",
+		"host": "cluster0.4earp.mongodb.net",
+		"port": "27017",
+		"name": "Cluster0"
 	},
 	"sessionSecret": "<RandomString>",
 	"facebook": {
