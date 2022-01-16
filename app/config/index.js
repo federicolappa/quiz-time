@@ -13,7 +13,7 @@ var init = function () {
 				port: process.env.dbPort,
 				name: process.env.dbName
 			},
-			sessionSecret: process.env.sessionSecret,
+			sessionSecret: process.env.SESSION_SECRET,
 			facebook: {
 				clientID: process.env.facebookClientID,
 				clientSecret: process.env.facebookClientSecret,
