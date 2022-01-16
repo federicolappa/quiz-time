@@ -26,13 +26,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.use(
-  session({
-    secret: "secretcode",
-    resave: true,
-    saveUninitialized: true,
-  })
-);
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+app.use(cookieParser());
+app.use(session({ secret: 'secret' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
