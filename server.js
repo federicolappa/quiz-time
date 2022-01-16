@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: alberotavolo,
     resave: false,
     saveUninitialized: false,
 }));
