@@ -6,7 +6,7 @@
 		"port": "27017",
 		"name": "Cluster0"
 	},
-	"sessionSecret": "ffdsfdrrefffefgfgr",
+	"sessionSecret": process.env.SESSION_SECRET,
 	"facebook": {
 		"clientID": "<AppID>",
 		"clientSecret": "<AppSecret>",
